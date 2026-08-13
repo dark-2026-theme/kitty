@@ -1,0 +1,62 @@
+<p align="center">
+  <img src="assets/logo.svg" alt="dark-2026" width="96" />
+</p>
+
+# dark-2026 — kitty
+
+A dark theme for [kitty](https://sw.kovidgoyal.net/kitty/), ported from VS Code's **Dark
+Modern 2026**: red keywords, purple functions, teal types and light-blue strings on a
+near-black `#121314` canvas.
+
+## The dark-2026 family
+
+| Target | Repository | |
+| --- | --- | --- |
+| Neovim | [dark-2026-theme/nvim](https://github.com/dark-2026-theme/nvim) | colorscheme plugin |
+| Ghostty | [dark-2026-theme/ghostty](https://github.com/dark-2026-theme/ghostty) | terminal theme |
+| kitty | [dark-2026-theme/kitty](https://github.com/dark-2026-theme/kitty) | **this repo** |
+| Xcode | [dark-2026-theme/xcode](https://github.com/dark-2026-theme/xcode) | editor theme |
+
+Every port shares one palette, so `:terminal` inside Neovim renders identically to the host
+terminal.
+
+## Install
+
+Copy the theme into kitty's themes directory:
+
+```sh
+cp themes/dark-2026.conf ~/.config/kitty/themes/dark-2026.conf
+```
+
+Then in `~/.config/kitty/kitty.conf`:
+
+```conf
+include themes/dark-2026.conf
+```
+
+Reload with `ctrl+shift+f5`, or restart kitty.
+
+## Palette
+
+| | Normal | | Bright |
+| --- | --- | --- | --- |
+| black | `#202122` | bright black | `#555555` |
+| red | `#ff7b72` | bright red | `#ffa198` |
+| green | `#7ee787` | bright green | `#91eb99` |
+| yellow | `#cd9731` | bright yellow | `#ffa657` |
+| blue | `#79c0ff` | bright blue | `#a5d6ff` |
+| magenta | `#d2a8ff` | bright magenta | `#b267e6` |
+| cyan | `#4ec9b0` | bright cyan | `#71d4c0` |
+| white | `#bbbebf` | bright white | `#ffffff` |
+
+Background `#121314`, foreground `#bbbebf`, cursor `#bbbebf` on `#121314`, selection
+`#276782` with `#ffffff` text. Tab bar, borders and marks are themed too.
+
+## Credits
+
+Palette from Microsoft's VS Code **Dark Modern 2026** theme, by way of
+[D0nw0r/dark2026.nvim](https://github.com/D0nw0r/dark2026.nvim) (MIT).
+
+## License
+
+[MIT](LICENSE)
