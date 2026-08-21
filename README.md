@@ -2,6 +2,10 @@
   <img src="assets/logo.svg" alt="dark-2026" width="96" />
 </p>
 
+<p align="center">
+  <img src="assets/kitty.png" alt="dark-2026" />
+</p>
+
 # dark-2026 — kitty
 
 A dark theme for [kitty](https://sw.kovidgoyal.net/kitty/), ported from VS Code's **Dark
